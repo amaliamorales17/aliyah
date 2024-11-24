@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag Drop</title>
+    <link rel="stylesheet" href="Flagger.css">
+    <script src="GuestF.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Flag Game!</h1>
+    </header>
+      <div class="start-game-container">
+        <button class="start-game" onclick="startGame()">Start Game</button>
+    </div>
+    <div class="game-container" style="display: none;">
+    <div class="draggableContainer">
+        <div class="box" draggable="true" id="box1" style="--img:url(korea.png);"></div>
+        <div class="box" draggable="true" id="box2" style="--img:url(images/australia.png);"></div>
+        <div class="box" draggable="true" id="box3" style="--img:url(images/canada.png);"></div>
+        <div class="box" draggable="true" id="box4" style="--img:url(images/germany.png);"></div>
+        <div class="box" draggable="true" id="box5" style="--img:url(images/unitedstate.png);"></div>  
+        <div class="box" draggable="true" id="box6" style="--img:url(images/unitedkingdom.png);"></div>
+        <div class="box" draggable="true" id="box7" style="--img:url(images/france.png);"></div>
+        <div class="box" draggable="true" id="box8" style="--img:url(images/japan.png);"></div>
+        <div class="box" draggable="true" id="box9" style="--img:url(images/Philippines.png);"></div>
+        <div class="box" draggable="true" id="box10" style="--img:url(images/china.png);"></div>
+
+    <div class="droppableContainer">
+        <div class="droppable" data-draggable-id="box10">China</div><br><br>
+        <div class="droppable" data-draggable-id="box1">Korea</div><br>
+        <div class="droppable" data-draggable-id="box9">Philippines</div>
+        <div class="droppable" data-draggable-id="box2">Australia</div>
+        <div class="droppable" data-draggable-id="box3">Canada</div>
+        <div class="droppable" data-draggable-id="box8">Japan</div>
+        <div class="droppable" data-draggable-id="box4">Germany</div>
+        <div class="droppable" data-draggable-id="box7">France</div>
+        <div class="droppable" data-draggable-id="box6">United Kingdom</div>
+        <div class="droppable" data-draggable-id="box5">United States</div><br>
+
+      <div class="board">Remarks:<p id="remarks"></p>
+        Total of Your Correct Answer:<p id="scores"></p>
+        </div>
+    </div>
+    <button class="reset" onclick="reset (event)">Try again</button>
+</body>
+</html>
